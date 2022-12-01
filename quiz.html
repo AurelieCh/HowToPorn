@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<html>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <head><title>Quiz Ludication</title>
+        <script src="./QuestionQuiz.js"></script>
+</head>
+
+
+<body class="quiz">
+<div id="question"></div>
+</body>
+
+</html>
+<script>Question1.get("question")
+
+    function submitVraiFaux(){
+    if(document.getElementById('vrai').checked) {
+      document.getElementById("question").innerHTML = Question1.BonneReponse;
+    }else if(document.getElementById('faux').checked) {
+      document.getElementById("question").innerHTML = Question1.BonneReponse;
+    }}
+
+</script>
