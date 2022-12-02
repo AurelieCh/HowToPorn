@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoguessr - HowToPorn</title>
+    <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <navbar>
+        <header class="d-flex flex-wrap justify-content-center py-2" style="background-color: brown;">
+            <a href="index.html" class="d-flex align-items-center">
+                <img src="../Images/Index/logo.png" height="85%" width="14%" style="margin-left:3%;">
+            </a>
+        </header>
+    </navbar>
+
+    <main>
+        <div class="container d-flex justify-content-center py-2">
+            <h1 style="text-shadow: 1px 1px 2px black;">Question </h1>
+        </div>
+
+        <div class="container d-flex" style="justify-content: center; margin-bottom: 3vh;">
+            <img id="img0" src="../images/geoguessr/0.png" hidden>
+            <img id="img1" src="../images/geoguessr/1.png" hidden>
+            <img id="img2" src="../images/geoguessr/2.png" hidden>
+            <img id="img3" src="../images/geoguessr/3.png" hidden>
+            <img id="img4" src="../images/geoguessr/4.png" hidden>
+        </div>
+
+        <div class="container d-flex justify-content-center mb-4">
+            <form class="row g-3">
+                <div class="col-auto">
+                    <label for="reponse" class="visually-hidden">Reponse</label>
+                    <input type="text" readonly class="form-control-plaintext" id="reponse"
+                        value="Qu'est ce que c'est ?">
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="txt" class="form-control" required>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary" onclick="verifReponse()" id="btn" type="button">OK</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="resultOk" hidden>
+            <div class="text-center">
+                <span style="color:green">Bravo !</span>
+            </div>
+        </div>
+        <div id="resultBou" hidden>
+            <div class="text-center">
+                <span style="color:red">Dommage :(</span>
+            </div>
+        </div>
+
+        <div class="container d-flex" style="justify-content: center;">
+            <div id="explication0" hidden>
+                <div class="d-flex justify-content-center">
+                    <span>
+                        Les testicules (testes) sont les gonades mâles des animaux. 
+                        Ils appartiennent à l'appareil reproducteur masculin, ce sont les homologues des ovaires. 
+                        Ils ont une double fonction, plus ou moins exprimée selon les périodes de la vie :
+                    </span>
+                    <br>
+                    <button class="btn btn-success align-items-center ml-1" type="button" OnClick="javascript:window.location.reload()" value="Actualiser">Ensuite</button>
+                </div>
+            </div>
+            <div id="explication1" hidden>
+                <div class="d-flex justify-content-center">
+                    <span>
+                        En effet, l'organe érectile de l'appareil génital féminin externe, 
+                        principalement composé de deux bulbes bordant la vulve et d'un gland (ou clitoris au sens strict), 
+                        situé au-dessus de l'orifice urétral. 
+                        On dit aussi organe bulbo-clitoridien. 
+                        (Très sensible, le clitoris participe au plaisir sexuel féminin.)
+                    </span>
+                    <br>
+                    <button class="btn btn-success align-items-center ml-1" type="button" OnClick="javascript:window.location.reload()" value="Actualiser">Ensuite</button>
+                </div>
+            </div>
+            <div id="explication2" hidden>
+                <div class="d-flex justify-content-center">
+                    <span>
+                        Et oui, chez l'être humain, l'anus se situe au niveau du périnée, 
+                        en arrière de la partie inférieure des organes génitaux externes, 
+                        c'est-à-dire la base du pénis chez l'homme et la vulve chez la femme. 
+                        L'anus est l'orifice externe du canal anal. Sa paroi est constituée de peau. 
+                        Sa vascularisation est assurée par les artères rectales inférieures et les veines rectales inférieures. 
+                        Son innervation est assurée par les nerfs rectaux inférieurs.
+                    </span>
+                    <br>
+                    <button class="btn btn-success align-items-center" type="button" OnClick="javascript:window.location.reload()" value="Actualiser">Ensuite</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 text-white" style="background-color:firebrick">
+        <div class="container">
+            <p>©2022 How2Porn, Inc. · <a class="text-white" href="">Politique de confidentialité</a> · <a href="#"></a></p>
+        </div>
+    </footer>
+
+
+    <script src="../js/geoguessr.js"></script>
+    <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../js/konami.js"></script>
+
+</body>
+
+</html>

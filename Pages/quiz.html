@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<html>
+<link rel="stylesheet" type="text/css" href="../css/styleQuiz.css">
+
+<head>
+  <title>Quiz Ludication</title>
+  <script src="../js/QuestionQuiz.js"></script>
+</head>
+
+
+<body class="quiz">
+  <navbar>
+    <header class="d-flex flex-wrap justify-content-center py-2" style="background-color: brown;">
+      <a href="index.html" class="d-flex align-items-center">
+        <img src="../Images/Index/logo.png" height="85%" width="14%" style="margin-left:3%;">
+      </a>
+    </header>
+  </navbar>
+
+  <div id="question"></div>
+
+  <footer class="footer mt-auto py-3 text-white" style="background-color:firebrick">
+    <div class="container">
+      <p>©2022 How2Porn, Inc. · <a class="text-white" href="">Politique de confidentialité</a> · <a href="#"></a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+<script>Question1.get("question")
+
+  function submitVraiFaux() {
+    if (document.getElementById('vrai').checked) {
+      document.getElementById("question").innerHTML = Question1.BonneReponse;
+    } else if (document.getElementById('faux').checked) {
+      document.getElementById("question").innerHTML = Question1.BonneReponse;
+    }
+  }
+
+</script>
+<script src="../js/konami.js"></script>
