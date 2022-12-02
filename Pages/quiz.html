@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../css/styleQuiz.css">
 
 <head>
-  <title>Quiz Ludication</title>
+  <title>H2P: Quiz</title>
   <script src="../js/QuestionQuiz.js"></script>
 </head>
 
@@ -30,15 +30,45 @@
 </body>
 
 </html>
-<script>Question1.get("question")
-
-  function submitVraiFaux() {
-    if (document.getElementById('vrai').checked) {
-      document.getElementById("question").innerHTML = Question1.BonneReponse;
-    } else if (document.getElementById('faux').checked) {
-      document.getElementById("question").innerHTML = Question1.BonneReponse;
+<script>
+  let questions = get5Question()
+  let i=0
+  let result=0;
+  questions[i].get("question")
+      function submitVrai(){
+      if(document.getElementById('vrai').checked) {
+        document.getElementById("question").innerHTML = questions[i].BonneReponse;
+        result++
+      }else{
+        document.getElementById("question").innerHTML = questions[i].FauxReponse;
+      }
     }
+      function submitFaux(){
+      if(document.getElementById('faux').checked) {
+        document.getElementById("question").innerHTML = questions[i].BonneReponse;
+        result++
+      }else {
+        document.getElementById("question").innerHTML = questions[i].FauxReponse;
+      }}
+  
+  
+      function submitMoyen(){
+      if(document.getElementById('pm').checked && document.getElementById('pf').checked && !document.getElementById('pl').checked && !document.getElementById('lv').checked) {
+        document.getElementById("question").innerHTML = questions[i].BonneReponse;
+        result++
+      }else{
+        document.getElementById("question").innerHTML = questions[i].FauxReponse;
+      }}
+  
+  function suivant(){
+    i++
+    if(i<5){
+      questions[i].get("question");
+      
+    }else{
+      document.getElementById("question").innerHTML = "<h1> Félicitation vous avez "+ result +" bonne(s) réponse(s) !";
+    }
+    
   }
-
-</script>
+  </script>
 <script src="../js/konami.js"></script>
