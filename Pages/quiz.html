@@ -55,6 +55,22 @@
     }
   }
 
+  function suivant() {
+    i++
+    if (i < 5) {
+      questions[i].get("question");
+
+    } else {
+      if(result == 5){
+        document.getElementById("question").innerHTML = `<h1> Wow ! ` + result + ` bonne(s) réponse(s) !</h1>
+          <img src="https://media.tenor.com/e7JhFzl1VhMAAAAC/kirby54-qi.gif"></img>
+          `;
+          var audio = new Audio("../music/quizTropFort.mp3");
+          audio.play();
+      }else{ document.getElementById("question").innerHTML = "<h1> Félicitation vous avez " + result + " bonne(s) réponse(s) !";}
+    }
+
+  }
 
   function submitMoyen() {
     if (document.getElementById('pm').checked && document.getElementById('pf').checked && !document.getElementById('pl').checked && !document.getElementById('lv').checked) {
