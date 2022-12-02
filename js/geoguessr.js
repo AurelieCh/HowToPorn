@@ -28,7 +28,7 @@ function verifReponse(){
                 txt.classList.add("is-valid")
                 resultOk.removeAttribute("hidden")
             } else if(txt.value.toLowerCase() == "nut"){
-                window.open('../Images/pepe-deez-nuts-pepe-frog.gif', '_blank');
+                window.open('https://media.tenor.com/jR291aTjU6QAAAAi/pepe-deez-nuts-pepe-frog.gif', '_blank');
             } else {
                 txt.classList.add("is-invalid")
                 resultBou.removeAttribute("hidden")
