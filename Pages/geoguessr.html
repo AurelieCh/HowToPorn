@@ -7,38 +7,48 @@
 </head>
 
 <body>
-    <div class="container d-flex" style="justify-content: center;">
-        <img id="img0" src="../images/geoguessr/0.png" hidden>
-        <img id="img1" src="../images/geoguessr/1.png" hidden>
-        <img id="img2" src="../images/geoguessr/2.png" hidden>
-        <img id="img3" src="../images/geoguessr/3.png" hidden>
-        <img id="img4" src="../images/geoguessr/4.png" hidden>
-    </div>
+    <navbar>
+        <header class="d-flex flex-wrap justify-content-center py-2" style="background-color: brown;">
+            <a href="/" class="d-flex align-items-center">
+                <img src="../Images/Index/logo.png" height="80%" width="17%" style="margin-left:3%;">
+            </a>
+        </header>
+    </navbar>
 
-    <div class="container d-flex" style="justify-content: center;">
-        <form class="form">
-            <input type="text" id="txt" class="form-control" required>
-            <button class="btn btn-primary" onclick="verifReponse()" id="btn" type="button">OK</button>
-        </form>
-    </div>
-
-    <div class="container d-flex" style="justify-content: center;">
-        <span id="explication0" hidden>
-            test
-        </span>
-        <span id="explication1" hidden>
-            UwU
-        </span>
-        <span id="explication2" hidden>
-            AyAyA
-        </span>
-        <span id="explication3" hidden>
-            OwO
-        </span>
-        <span id="explication4" hidden>
-            Aurel ptass
-        </span>
-    </div>
+    <main>
+        <div class="container d-flex" style="justify-content: center;">
+            <img id="img0" src="../images/geoguessr/0.png" hidden>
+            <img id="img1" src="../images/geoguessr/1.png" hidden>
+            <img id="img2" src="../images/geoguessr/2.png" hidden>
+            <img id="img3" src="../images/geoguessr/3.png" hidden>
+            <img id="img4" src="../images/geoguessr/4.png" hidden>
+        </div>
+    
+        <div class="container d-flex" style="justify-content: center;">
+            <form class="form">
+                <input type="text" id="txt" class="form-control" required>
+                <button class="btn btn-primary" onclick="verifReponse()" id="btn" type="button">OK</button>
+            </form>
+        </div>
+    
+        <div class="container d-flex" style="justify-content: center;">
+            <span id="explication0" hidden>
+                test
+            </span>
+            <span id="explication1" hidden>
+                UwU
+            </span>
+            <span id="explication2" hidden>
+                AyAyA
+            </span>
+            <span id="explication3" hidden>
+                OwO
+            </span>
+            <span id="explication4" hidden>
+                Aurel ptass
+            </span>
+        </div>
+    </main>
 
     <script src="../js/geoguessr.js"></script>
     <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"></script>
