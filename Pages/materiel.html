@@ -79,10 +79,6 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
         }
-
-        .egg:hover {
-            color: black;
-        }
     </style>
 
 
@@ -94,18 +90,16 @@
 
 <body>
 
-    
     <navbar>
         <header class="d-flex flex-wrap justify-content-center py-2" style="background-color: brown;">
             <a href="/" class="d-flex align-items-center">
                 <img src="../Images/Index/logo.png" height="85%" width="14%" style="margin-left:3%;">
             </a>
-
         </header>
     </navbar>
 
     <div class="container">
-        <header class="blog-header lh-1 py-1">
+        <header class="blog-header lh-1 py-3">
             <h1 style="text-shadow: 2px 2px 2px black; color:darkred; text-align: center; margin-top: 2rem;">Les
                 différents matériels</h1>
         </header>
@@ -118,22 +112,21 @@
         <div class="row mb-2">
             <div class="col-md-6">
                 <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="preservatif">
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0">Préservatifs</h3>
-                        <p class="card-text mb-auto" style="height:15rem; margin-top:1rem;">Le préservatif s'avère
-                            être très efficace pour empêcher la transmission des infections sexuellement
-                            transmissibles (IST) par les sécrétions vaginales, péniennes et le sperme mais n'offre
-                            pas de protection face aux IST présentes sur les surfaces cutanées de la zone génitale.
-                        </p>
+                        <p class="card-text mb-auto" style="height:15rem; margin-top:1rem;">Le préservatif s'avère être
+                            très efficace pour empêcher la transmission des infections sexuellement transmissibles (IST)
+                            par les sécrétions vaginales, péniennes et le sperme mais n'offre pas de protection face aux
+                            IST présentes sur les surfaces cutanées de la zone génitale.</p>
                         <a href="https://www.durex.fr/products/pleasure-ultra-x10?gclid=EAIaIQobChMI0Jj0qeLZ-wIVAoXVCh1z3gjMEAYYASABEgKoT_D_BwE"
-                            class="stretched-link" >Acheter</a>
+                            class="stretched-link">Acheter</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../Images/matériel/preservatifs.jpg" 
+                        <img src="../Images/materiel/preservatifs.jpg"
                             href="https://www.durex.fr/products/pleasure-ultra-x10?gclid=EAIaIQobChMI0Jj0qeLZ-wIVAoXVCh1z3gjMEAYYASABEgKoT_D_BwE"
                             width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" >
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
                             dy=".3em"></text></a>
@@ -147,36 +140,22 @@
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0">Auto test</h3>
                         <p class="mb-auto" style="height:15rem; margin-top:1rem;">Un examen sanguin de dépistage, en
-                            laboratoire de biologie médicale, sans ordonnance, sans rendez-vous et sans avance de
-                            frais est possible. Un test rapide d'orientation diagnostique (TROD VIH) et un autotest
-                            VIH sont également disponibles.
+                            laboratoire de biologie médicale, sans ordonnance, sans rendez-vous et sans avance de frais
+                            est possible. Un test rapide d'orientation diagnostique (TROD VIH) et un autotest VIH sont
+                            également disponibles.
                         </p>
                         <a href="https://www.exacto.fr/produits/autotests/test-hiv/?gclid=EAIaIQobChMIven1x-PZ-wIVR7rVCh040wQCEAAYASAAEgJtCvD_BwE"
                             class="stretched-link">Acheter</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../Images/matériel/depistage.png" width="200" height="250"
+                        <img src="../Images/materiel/depistage.png" width="200" height="250"
                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                             preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
                             dy=".3em"></text>
+
                     </div>
-
-                    <script>
-                        let preservatif = document.getElementById("preservatif");
-                        preservatif.addEventListener("mouseout", () => {
-                            let rep = prompt("Etes-vous sûr de ne pas choisir ces préservatifs perlés ?","oui ou non ?");
-                            if(rep == "oui" || rep =="Oui"){
-                                alert("Ah dommage, mais reposez vous la question quand même !")
-                            }
-                            else{
-                                window.open("https://www.durex.fr/products/pleasure-ultra-x10?gclid=EAIaIQobChMI0Jj0qeLZ-wIVAoXVCh1z3gjMEAYYASABEgKoT_D_BwE","_blank");
-                            }
-                        });
-                    </script>
-
-
                 </div>
             </div>
         </div>
@@ -190,16 +169,13 @@
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0">Lubrifiant</h3>
                         <p class="card-text mb-auto" style="margin-top:1rem; height: 15rem;">En cas de sécheresse
-                            vaginale,
-                            le Gel lubrifiant DUREX est tout indiqué pour réhydrater vos zones intimes. Ce produit
-                            est idéal
-                            pour les besoins de lubrification corporelle, vaginale ou extra-vaginale.<br><br>Pourra
-                            être
-                            utile pour la rubrique suivante !</p>
+                            vaginale, le Gel lubrifiant DUREX est tout indiqué pour réhydrater vos zones intimes. Ce
+                            produit est idéal pour les besoins de lubrification corporelle, vaginale ou
+                            extra-vaginale.<br><br>Pourra être utile pour la rubrique suivante !</p>
                         <a href="https://www.durex.fr/products/gel-perfect-gliss-100" class="stretched-link">Acheter</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../Images/matériel/lubrifiant.webp"
+                        <img src="../Images/materiel/lubrifiant.webp"
                             href="https://www.durex.fr/products/gel-perfect-gliss-100" width="200" height="250"
                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                             preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -215,19 +191,16 @@
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0">Plaisir anal</h3>
-                        <p class="mb-auto" style="margin-top:1rem; height: 15rem;">Il est possible de pratiquer
-                            l'anal avec
-                            un préservatif ou alors avec un intermédiaire comme un godemichet.<br><br> Attention, il
-                            est
-                            recommandé de ne pas commencer par celui présent sur l'image de présentation !!<br>(Il
-                            est
-                            beaucoup trop gros (attention aux déchirures anales))
+                        <p class="mb-auto" style="margin-top:1rem; height: 15rem;">Il est possible de pratiquer l'anal
+                            avec un préservatif ou alors avec un intermédiaire comme un godemichet.<br><br> Attention,
+                            il est recommandé de ne pas commencer par celui présent sur l'image de présentation
+                            !!<br>(Il est beaucoup trop gros (attention aux déchirures anales))
                         </p>
                         <a href="https://www.amazon.fr/R𝐞𝐚𝐥𝐢𝐬𝐭𝐞-G𝐨𝐝𝐞𝐦𝐢𝐜𝐡𝐞𝐭𝐬-V𝐞𝐧𝐭𝐨𝐮𝐬𝐞-S𝐢𝐥𝐢𝐜𝐨𝐧𝐞-H𝐨𝐦𝐦𝐞𝗑𝗑𝗅/dp/B0B76B3BBR/ref=sr_1_1?__mk_fr_FR=ÅMÅŽÕÑ&crid=220O2SE9UP0O1&keywords=godemichet+16+cm&qid=1669945762&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=godemichet+16cm%2Caps%2C63&sr=8-1"
                             class="stretched-link">Acheter</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../Images/matériel/gode.jpg" width="200" height="250"
+                        <img src="../Images/materiel/gode.jpg" width="200" height="250"
                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                             preserveAspectRatio="xMidYMid slice" focusable="false">
                         <title>Placeholder</title>
@@ -238,24 +211,16 @@
                 </div>
             </div>
         </div>
-
-
-
     </main>
 
     <footer class="footer mt-auto py-3 text-white" style="background-color:firebrick">
         <div class="container">
-            <p>©2022 How2Porn, Inc. · <a class="text-white" href="#">Politique de confidentialité</a> · <a href="#"></a>
-            </p>
+            <p>©2022 How2Porn, Inc. · <a class="text-white" href="">Politique de confidentialité</a> · <a href="#"></a></p>
         </div>
     </footer>
 
-
-
-
-
-
     <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../js/konami.js"></script>
 </body>
 
 </html>
