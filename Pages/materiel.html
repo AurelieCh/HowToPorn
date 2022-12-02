@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -8,174 +10,253 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/blog/">
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
-    
 
-    
 
-<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <!-- Favicons -->
 
-<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#712cf9">
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
 
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .egg:hover {
+            color: black;
+        }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="blog.css" rel="stylesheet">
-  </head>
-  <body>
+</head>
 
+<body>
+
+    
     <navbar>
         <header class="d-flex flex-wrap justify-content-center py-2" style="background-color: brown;">
             <a href="/" class="d-flex align-items-center">
                 <img src="../Images/Index/logo.png" height="85%" width="14%" style="margin-left:3%;">
             </a>
+
         </header>
     </navbar>
-    
-<div class="container">
-  <header class="blog-header lh-1 py-3">
-    <h1 style="text-shadow: 2px 2px 2px black; color:darkred; text-align: center; margin-top: 2rem;">Les différents matériels</h1>
-  </header>
 
-</div>
+    <div class="container">
+        <header class="blog-header lh-1 py-1">
+            <h1 style="text-shadow: 2px 2px 2px black; color:darkred; text-align: center; margin-top: 2rem;">Les
+                différents matériels</h1>
+        </header>
 
-<main class="container">
-  
-
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">Préservatifs</h3>
-          <p class="card-text mb-auto" style="height:15rem; margin-top:1rem;">Le préservatif s'avère être très efficace pour empêcher la transmission des infections sexuellement transmissibles (IST) par les sécrétions vaginales, péniennes et le sperme mais n'offre pas de protection face aux IST présentes sur les surfaces cutanées de la zone génitale.</p>
-          <a href="https://www.durex.fr/products/pleasure-ultra-x10?gclid=EAIaIQobChMI0Jj0qeLZ-wIVAoXVCh1z3gjMEAYYASABEgKoT_D_BwE" class="stretched-link">Acheter</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="../Images/matériel/preservatifs.jpg" href= "https://www.durex.fr/products/pleasure-ultra-x10?gclid=EAIaIQobChMI0Jj0qeLZ-wIVAoXVCh1z3gjMEAYYASABEgKoT_D_BwE" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" ></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></a>
-
-        </div>
-      </div>
     </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0" >Auto test</h3>
-          <p class="mb-auto" style="height:15rem; margin-top:1rem;">Un examen sanguin de dépistage, en laboratoire de biologie médicale, sans ordonnance, sans rendez-vous et sans avance de frais est possible. Un test rapide d'orientation diagnostique (TROD VIH) et un autotest VIH sont également disponibles.
-        </p>
-          <a href="https://www.exacto.fr/produits/autotests/test-hiv/?gclid=EAIaIQobChMIven1x-PZ-wIVR7rVCh040wQCEAAYASAAEgJtCvD_BwE" class="stretched-link">Acheter</a>
+
+    <main class="container">
+
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="preservatif">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">Préservatifs</h3>
+                        <p class="card-text mb-auto" style="height:15rem; margin-top:1rem;">Le préservatif s'avère
+                            être très efficace pour empêcher la transmission des infections sexuellement
+                            transmissibles (IST) par les sécrétions vaginales, péniennes et le sperme mais n'offre
+                            pas de protection face aux IST présentes sur les surfaces cutanées de la zone génitale.
+                        </p>
+                        <a href="https://www.durex.fr/products/pleasure-ultra-x10?gclid=EAIaIQobChMI0Jj0qeLZ-wIVAoXVCh1z3gjMEAYYASABEgKoT_D_BwE"
+                            class="stretched-link" >Acheter</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="../Images/matériel/preservatifs.jpg" 
+                            href="https://www.durex.fr/products/pleasure-ultra-x10?gclid=EAIaIQobChMI0Jj0qeLZ-wIVAoXVCh1z3gjMEAYYASABEgKoT_D_BwE"
+                            width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" >
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em"></text></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">Auto test</h3>
+                        <p class="mb-auto" style="height:15rem; margin-top:1rem;">Un examen sanguin de dépistage, en
+                            laboratoire de biologie médicale, sans ordonnance, sans rendez-vous et sans avance de
+                            frais est possible. Un test rapide d'orientation diagnostique (TROD VIH) et un autotest
+                            VIH sont également disponibles.
+                        </p>
+                        <a href="https://www.exacto.fr/produits/autotests/test-hiv/?gclid=EAIaIQobChMIven1x-PZ-wIVR7rVCh040wQCEAAYASAAEgJtCvD_BwE"
+                            class="stretched-link">Acheter</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="../Images/matériel/depistage.png" width="200" height="250"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em"></text>
+                    </div>
+
+                    <script>
+                        let preservatif = document.getElementById("preservatif");
+                        preservatif.addEventListener("mouseout", () => {
+                            let rep = prompt("Etes-vous sûr de ne pas choisir ces préservatifs perlées ?","oui ou non ?");
+                            if(rep == "oui" || rep =="Oui"){
+                                alert("Ah dommage, mais reposez vous la question quand même !")
+                            }
+                            else{
+                                window.open("https://www.durex.fr/products/pleasure-ultra-x10?gclid=EAIaIQobChMI0Jj0qeLZ-wIVAoXVCh1z3gjMEAYYASABEgKoT_D_BwE","_blank");
+                            }
+                        });
+                    </script>
+
+
+                </div>
+            </div>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="../Images/matériel/depistage.png" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
 
+
+
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">Lubrifiant</h3>
+                        <p class="card-text mb-auto" style="margin-top:1rem; height: 15rem;">En cas de sécheresse
+                            vaginale,
+                            le Gel lubrifiant DUREX est tout indiqué pour réhydrater vos zones intimes. Ce produit
+                            est idéal
+                            pour les besoins de lubrification corporelle, vaginale ou extra-vaginale.<br><br>Pourra
+                            être
+                            utile pour la rubrique suivante !</p>
+                        <a href="https://www.durex.fr/products/gel-perfect-gliss-100" class="stretched-link">Acheter</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="../Images/matériel/lubrifiant.webp"
+                            href="https://www.durex.fr/products/gel-perfect-gliss-100" width="200" height="250"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em"></text></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">Plaisir anal</h3>
+                        <p class="mb-auto" style="margin-top:1rem; height: 15rem;">Il est possible de pratiquer
+                            l'anal avec
+                            un préservatif ou alors avec un intermédiaire comme un godemichet.<br><br> Attention, il
+                            est
+                            recommandé de ne pas commencer par celui présent sur l'image de présentation !!<br>(Il
+                            est
+                            beaucoup trop gros (attention aux déchirures anales))
+                        </p>
+                        <a href="https://www.amazon.fr/R𝐞𝐚𝐥𝐢𝐬𝐭𝐞-G𝐨𝐝𝐞𝐦𝐢𝐜𝐡𝐞𝐭𝐬-V𝐞𝐧𝐭𝐨𝐮𝐬𝐞-S𝐢𝐥𝐢𝐜𝐨𝐧𝐞-H𝐨𝐦𝐦𝐞𝗑𝗑𝗅/dp/B0B76B3BBR/ref=sr_1_1?__mk_fr_FR=ÅMÅŽÕÑ&crid=220O2SE9UP0O1&keywords=godemichet+16+cm&qid=1669945762&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=godemichet+16cm%2Caps%2C63&sr=8-1"
+                            class="stretched-link">Acheter</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="../Images/matériel/gode.jpg" width="200" height="250"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em"></text>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
 
 
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">Lubrifiant</h3>
-          <p class="card-text mb-auto" style="margin-top:1rem; height: 15rem;">En cas de sécheresse vaginale, le Gel lubrifiant DUREX est tout indiqué pour réhydrater vos zones intimes. Ce produit est idéal pour les besoins de lubrification corporelle, vaginale ou extra-vaginale.<br><br>Pourra être utile pour la rubrique suivante !</p>
-          <a href="https://www.durex.fr/products/gel-perfect-gliss-100" class="stretched-link">Acheter</a>
+    </main>
+
+    <footer class="footer mt-auto py-3 text-white" style="background-color:firebrick">
+        <div class="container">
+            <p>©2022 How2Porn, Inc. · <a class="text-white" href="#">Politique de confidentialité</a> · <a href="#"></a>
+            </p>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="../Images/matériel/lubrifiant.webp" href= "https://www.durex.fr/products/gel-perfect-gliss-100" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></a>
-
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">Plaisir anal</h3>
-          <p class="mb-auto" style="margin-top:1rem; height: 15rem;">Il est possible de pratiquer l'anal avec un préservatif ou alors avec un intermédiaire comme un godemichet.<br><br> Attention, il est recommandé de ne pas commencer par celui présent sur l'image de présentation !!<br>(Il est beaucoup trop gros (attention aux déchirures anales))
-        </p>
-          <a href="https://www.amazon.fr/R𝐞𝐚𝐥𝐢𝐬𝐭𝐞-G𝐨𝐝𝐞𝐦𝐢𝐜𝐡𝐞𝐭𝐬-V𝐞𝐧𝐭𝐨𝐮𝐬𝐞-S𝐢𝐥𝐢𝐜𝐨𝐧𝐞-H𝐨𝐦𝐦𝐞𝗑𝗑𝗅/dp/B0B76B3BBR/ref=sr_1_1?__mk_fr_FR=ÅMÅŽÕÑ&crid=220O2SE9UP0O1&keywords=godemichet+16+cm&qid=1669945762&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=godemichet+16cm%2Caps%2C63&sr=8-1" class="stretched-link">Acheter</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="../Images/matériel/gode.jpg" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-</main>
-
-<footer class="container">
-    <p>©2022 How2Porn, Inc. · <a href="#">Politique de confidentialité</a> · <a href="#"></a></p>
-  </footer>
+    </footer>
 
 
-    
-  
-<script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body></html>
+
+
+
+
+    <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
