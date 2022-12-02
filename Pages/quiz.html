@@ -2,24 +2,31 @@
 <html>
 <meta charset="UTF-8">
 <html>
-    <link rel="stylesheet" type="text/css" href="../css/styleQuiz.css"> 
-    <head><title>Quiz Ludication</title>
-        <script src="../js/QuestionQuiz.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/styleQuiz.css">
+
+<head>
+  <title>Quiz Ludication</title>
+  <script src="../js/QuestionQuiz.js"></script>
 </head>
 
 
 <body class="quiz">
-<div id="question"></div>
+  <div id="question"></div>
+
+  <footer class="container">
+    <p>©2022 How2Porn, Inc. · <a href="#">Politique de confidentialité</a> · <a href="#"></a></p>
+  </footer>
 </body>
 
 </html>
 <script>Question1.get("question")
 
-    function submitVraiFaux(){
-    if(document.getElementById('vrai').checked) {
+  function submitVraiFaux() {
+    if (document.getElementById('vrai').checked) {
       document.getElementById("question").innerHTML = Question1.BonneReponse;
-    }else if(document.getElementById('faux').checked) {
+    } else if (document.getElementById('faux').checked) {
       document.getElementById("question").innerHTML = Question1.BonneReponse;
-    }}
+    }
+  }
 
 </script>
